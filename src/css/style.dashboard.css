@@ -1,0 +1,19 @@
+
+/*
+    dashboard
+*/
+.header {
+    background-color: white;
+             display: none;
+	     padding: 15px 20px;
+	      height: 69px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .header {
+	margin-left: 230px;
+	    display: block;
+    }
+
+}
