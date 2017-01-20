@@ -51,9 +51,55 @@
     color: #353637;
 }
 
+/*
+    user panel
+*/
+.user.panel {
+    display: none;
+}
+
+.logged.in ul {
+    list-style: none;
+        margin: 0;
+}
+
+.logged.in ul li.user {
+    margin-right: 20px;
+      margin-top: 8px;
+           color: #858585;
+}
+
+.logged.in ul li.gravatar img {
+    max-width: 40px;
+}
+
 @media only screen and (min-width: 768px) {
 
     .header {
+	display: block;
+    }
+
+    .dashboard.menu {
+	display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .user.panel {
+	display: block;
+    }
+    
+    .logged.in ul li.user {
+	display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1170px) {
+
+    .logged.in ul li.user {
 	display: block;
     }
 

@@ -1,24 +1,11 @@
 
 /*
-    import css styles
-*/
-@import url(css.ui.min.css);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-
-/*
-    elements
-*/
-body {
-    background-color: #f4f4f4;
-         font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
-}
-
-/*
     dropdown menu
 */
 .dropdown {
-    position: relative;
-       width: 110px;
+    margin-left: 12px;
+     margin-top: 8px;
+       position: relative;
 }
 
 .dropdown p { margin: 0; }
@@ -27,7 +14,7 @@ body {
     border-radius: 30px;
         font-size: 14px;
           padding: 2px 12px;
-            color: #2d2d2d;
+            color: #858585;
 }
 
 .dropdown .employ-toggle.click:hover {
@@ -39,6 +26,7 @@ body {
     margin-top: 5px;
       position: absolute;
        display: none;
+         right: 0;
 	   top: 100%;
 }
 
