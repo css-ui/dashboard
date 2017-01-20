@@ -77,7 +77,7 @@
     content
 */
 .content {
-    padding: 25px 35px 25px 35px;
+    padding: 25px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -88,6 +88,10 @@
 
     .dashboard.menu {
 	display: none;
+    }
+    
+    .content {
+	padding: 25px 35px;
     }
 
 }
