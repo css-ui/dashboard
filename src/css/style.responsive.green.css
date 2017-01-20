@@ -2,6 +2,10 @@
 /*
     dark style sidebar menu
 */
+
+.nav .click { color: #353637; }
+.nav .click .menu:hover { background-color: #dfdfdf; }
+
 .sidebar .title {
     background-color: white;
          font-weight: 500;
