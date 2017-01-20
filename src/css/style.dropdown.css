@@ -46,7 +46,7 @@
 }
 
 .dropdown ul.expand-dropdown li a {
-    background-color: #484848;
+    background-color: rgba(0, 0, 0, 0.40);
      text-decoration: none;
              display: block;
              padding: 5px 10px;
@@ -54,6 +54,6 @@
 }
 
 .dropdown ul.expand-dropdown li a:hover {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.48);
                color: white;
 }
