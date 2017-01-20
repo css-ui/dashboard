@@ -70,7 +70,8 @@
 }
 
 .logged.in ul li.gravatar img {
-    max-width: 40px;
+    border-radius: 30px;
+        max-width: 40px;
 }
 
 /*
