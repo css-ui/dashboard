@@ -1,0 +1,34 @@
+
+/*
+    dark style sidebar menu
+*/
+
+.nav .click { color: #353637; }
+.nav .click .menu:hover { background-color: #246eba; }
+
+.sidebar .title {
+    background-color: white;
+         font-weight: 500;
+               color: #246eba;
+}
+
+.sidebar ul.menu { background-color: #246eba; }
+.sidebar ul.menu li { color: #102b47; }
+.sidebar ul.menu li a { color: #75b5f6; }
+
+.sidebar ul.menu li a:hover {
+    background-color: #2164aa;
+               color: #75b5f6;
+}
+
+.sidebar ul.menu li a.current {
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .sidebar {
+	background-color: #246eba;
+    }
+
+}
