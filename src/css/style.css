@@ -4,7 +4,7 @@
 */
 @import url(css.ui.min.css);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-@import url(style.sidebar.css);
+@import url(style.responsive.css);
 @import url(style.dropdown.css);
 @import url(style.dashboard.css);
 

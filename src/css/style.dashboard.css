@@ -9,11 +9,52 @@
 	      height: 69px;
 }
 
+/*
+    dashboard header menu
+*/
+.header ul.header-menu {
+    list-style: none;
+        margin: 3px 0 0 15px;
+}
+
+.header ul.header-menu li {
+    display: inline-block;
+     margin: 0 40px 0 0;
+}
+
+.header ul.header-menu li a i.fa {
+    font-size: 1.5em;
+     position: relative;
+          top: 2px;
+}
+
+.header ul.header-menu li a span {
+    margin-left: 15px;
+}
+
+.header ul.header-menu li a span span.notifications {
+    background-color: #ef6262;
+       border-radius: 30px;
+         margin-left: 15px;
+	   font-size: 0.75em;
+             padding: 1px 6px 2px 6px;
+	       color: white;
+}
+
+.header ul.header-menu li a {
+    text-decoration: none;
+              color: #858585;
+}
+
+.header ul.header-menu li a:hover,
+.header ul.header-menu li a.current {
+    color: #353637;
+}
+
 @media only screen and (min-width: 768px) {
 
     .header {
-	margin-left: 230px;
-	    display: block;
+	display: block;
     }
 
 }

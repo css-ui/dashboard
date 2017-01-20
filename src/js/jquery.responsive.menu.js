@@ -4,6 +4,6 @@
  */
 $(function() {
 	$('.nav .click').click(function() {
-		$('.nav .responsive').toggleClass('expand');
+		$('.nav .responsive').toggleClass('expand-responsive');
 	});
 });

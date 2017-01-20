@@ -1,6 +1,20 @@
 
 /*
-    responsive menu style
+    import css styles
+*/
+@import url(css.ui.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+/*
+    elements
+*/
+body {
+    background-color: #f4f4f4;
+         font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/*
+    responsive menu
 */
 .nav .click {
      cursor: pointer;
@@ -20,7 +34,7 @@
 }
 
 .nav .responsive { display: none; }
-.nav .expand { display: block !important; }
+.nav .expand-responsive { display: block !important; }
 
 /*
     sidebar
@@ -99,7 +113,7 @@
                      top: 0;
     }
 
-    .content {
+    .wrapping {
 	margin-left: 230px;
     }
 
