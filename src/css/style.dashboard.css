@@ -90,7 +90,7 @@
     .dashboard.menu {
 	display: none;
     }
-    
+
     .content {
 	padding: 15px 35px;
     }
@@ -98,11 +98,11 @@
 }
 
 @media only screen and (min-width: 1024px) {
-    
+
     .user.panel {
 	display: block;
     }
-    
+
     .logged.in ul li.user {
 	display: none;
     }
