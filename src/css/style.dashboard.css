@@ -63,15 +63,20 @@
         margin: 0;
 }
 
+.logged.in ul li {
+    margin: 0;
+}
+
 .logged.in ul li.user {
     margin-right: 20px;
-      margin-top: 8px;
+      margin-top: 7px;
            color: #858585;
 }
 
 .logged.in ul li.gravatar img {
     border-radius: 30px;
         max-width: 40px;
+	  display: block;
 }
 
 /*
