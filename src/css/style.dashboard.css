@@ -96,6 +96,32 @@
     background-color: #f4f4f4;
 }
 
+/*
+    table acction buttons
+*/
+a.action-button {
+    border-radius: 3px;
+          padding: 2px 6px;
+	  display: inline-block;
+	    color: white;
+}
+
+a.action-button.edit {
+    background-color: #82bbf5;
+}
+
+a.action-button.edit:hover {
+    background-color: #3881cb;
+}
+
+a.action-button.delete {
+    background-color: #f58282;
+}
+
+a.action-button.delete:hover {
+    background-color: #cd2b2b;
+}
+
 @media only screen and (min-width: 768px) {
 
     .header {

@@ -17,6 +17,9 @@ body {
          font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
+/*
+    nanobar
+*/
 .nanobar {
     z-index: 9999;
      height: 2px;
