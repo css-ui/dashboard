@@ -1,0 +1,19 @@
+
+/*
+    style tables
+*/
+table td,
+table th {
+    padding: 5px;
+}
+
+table tr:nth-child(even) { background-color: white; }
+table tr:nth-child(odd) { background-color: #f4f4f4; }
+
+table th:first-child,
+table td:first-child {
+    padding-left: 20px;
+}
+
+table tr.tr.hover:hover { background-color: #e0e0e0; }
+table tr.tr.hover span { color: #2976c6; }
