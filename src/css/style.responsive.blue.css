@@ -13,7 +13,7 @@
 }
 
 .sidebar ul.menu { background-color: #246eba; }
-.sidebar ul.menu li { color: #102b47; }
+.sidebar ul.menu li { color: white; }
 .sidebar ul.menu li a { color: #75b5f6; }
 
 .sidebar ul.menu li a:hover {

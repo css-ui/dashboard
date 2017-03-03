@@ -137,6 +137,27 @@
 		<!-- content -->
 		<div class="content">
 			<h3>Dashboard</h3>
+			
+			<div class="content-box">
+			    	<form>
+					<fieldset>
+						<legend>Form style</legend>
+						<div class="row">
+							<div class="six columns">
+								<input type="text" placeholder="Username" class="full width">
+								<i class="help">This one help text.</i>
+							</div>
+							<div class="six columns">
+								<input type="password" placeholder="Password" required class="full width">
+								<i class="help">This one help text.</i>
+							</div>
+						</div>
+					</fieldset>
+				    	<div class="align right">
+						<input type="submit" class="button common" value="Submit">
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 
@@ -144,5 +165,10 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.responsive.menu.js"></script>
 	<script src="js/jquery.dropdown.menu.js"></script>
+	<script src="js/nanobar.min.js"></script>
+	<script>
+		var nanobar = new Nanobar();
+		nanobar.go(100);
+	</script>
 </body>
 </html>
