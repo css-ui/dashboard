@@ -2,18 +2,87 @@
 /*
     style tables
 */
-table td,
-table th {
-    padding: 5px;
+table {
+    border-collapse: collapse;
 }
 
-table tr:nth-child(even) { background-color: white; }
-table tr:nth-child(odd) { background-color: #f4f4f4; }
+table td,
+table th {
+    padding: 5px 8px;
+}
 
 table th:first-child,
 table td:first-child {
-    padding-left: 20px;
+    padding-left: 8px;
 }
 
-table tr.tr.hover:hover { background-color: #e0e0e0; }
-table tr.tr.hover span { color: #2976c6; }
+/*
+    default
+*/
+table tr.default:nth-child(even) {
+    background-color: white;
+}
+
+table tr.default:nth-child(odd)  {
+    background-color: #f4f4f4;
+}
+
+/*
+    primary
+*/
+table tr.primary th {
+    border-color: #7cbae2;
+}
+
+table tr.primary td {
+    border-color: #7cbae2;
+           color: #1f4259;
+}
+
+table tr.primary:nth-child(even) td {
+    background-color: #a0d3f4;
+}
+
+table tr.primary:nth-child(odd) td  {
+    background-color: #89c8f1;
+}
+
+/*
+    success
+*/
+table tr.success th {
+    border-color: #80c75f;
+}
+
+table tr.success td {
+    border-color: #80c75f;
+           color: #315620;
+}
+
+table tr.success:nth-child(even) td {
+    background-color: #aaea8d;
+}
+
+table tr.success:nth-child(odd) td  {
+    background-color: #8edc6b;
+}
+
+/*
+    danger
+*/
+table tr.danger th {
+    border-color: #d46a6a;
+}
+
+table tr.danger td {
+    border-color: #d46a6a;
+           color: #542121;
+}
+
+table tr.danger:nth-child(even) td {
+    background-color: #f19f9f;
+}
+
+table tr.danger:nth-child(odd) td  {
+    background-color: #e37b7b;
+}
