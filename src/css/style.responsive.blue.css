@@ -2,7 +2,6 @@
 /*
     blue style sidebar menu
 */
-
 .nav .click { color: #353637; }
 .nav .click .menu:hover { background-color: #dfdfdf; }
 
@@ -16,6 +15,21 @@
 .sidebar ul.menu li { color: white; }
 .sidebar ul.menu li a { color: #75b5f6; }
 
+.sidebar li.logged { background-color: #ebebeb; }
+.sidebar li.logged span { color: #6e6e6e; }
+.sidebar li.logged ul li a { color: #6e6e6e; }
+.sidebar li.logged ul li a:hover {
+    background-color: white;
+               color: #6e6e6e;
+}
+
+.sidebar li.logged span.truncate {
+    text-overflow: ellipsis;
+      white-space: nowrap;
+         overflow: hidden;
+	    width: 220px;
+}
+
 .sidebar ul.menu li a:hover {
     background-color: #2164aa;
                color: #75b5f6;
@@ -23,6 +37,14 @@
 
 .sidebar ul.menu li a.current {
     color: white;
+}
+
+@media only screen and (min-width: 400px) {
+
+    .sidebar li.logged span.truncate {
+	        width: 320px;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {

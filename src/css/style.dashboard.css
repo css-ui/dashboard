@@ -138,7 +138,7 @@ a.action-button.detail:hover {
 	display: block;
     }
 
-    .dashboard.menu {
+    .hidden.menu {
 	display: none;
     }
 
