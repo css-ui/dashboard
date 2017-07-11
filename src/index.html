@@ -9,8 +9,7 @@
 
 	<!-- CSS styles -->
 	<link rel="stylesheet" href="css/style.css">
-	<!--<link rel="stylesheet" href="css/style.responsive.green.css">-->
-	<link rel="stylesheet" href="css/style.responsive.blue.css">
+	<link rel="stylesheet" href="css/style.responsive.theme.css">
 </head>
 <body>
 	<!-- navigation -->
@@ -26,48 +25,46 @@
 
 			<!-- sidebar title -->
 			<div class="title">
-				<p>CSS UI - Menu</p>
+				<p>Simple Dashboard</p>
 			</div>
 
+			<!-- sidebar logged in user -->
+			<div class="logged sidebar">
+			    	<ul class="align center">
+					<li class="gravatar"><img src="img/user.png" alt="user"></li>
+					<li class="username">John Doe</li>
+					<li><a href="#" class="button default primary">Logout</a></li>
+				</ul>
+			</div>
+
+			<!-- responsive -->
 			<div class="responsive">
 
-				<!-- sidebar menu -->
+				<!-- menu -->
 				<ul class="menu">
 
-				    	<!-- user and gravatar -->
-					<li class="top hidden menu logged">
-						<span class="clear">
-							<span class="float left truncate"><b>You login as John Doe Master</b></span>
-							<span class="float right"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
-						</span>
-						<ul>
-							<li><a href=""><i class="fa fa-circle-o icon" aria-hidden="true"></i>Profile</a></li>
-							<li><a href=""><i class="fa fa-circle-o icon" aria-hidden="true"></i>Logout</a></li>
-						</ul>
-					</li>
-
 					<!-- languages -->
-					<li class="top">
+					<li>
 						<span class="clear">
 							<span class="float left">Languages</span>
 							<span class="float right"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
 						</span>
 						<ul>
-						    	<li><a href="" class="current"><i class="fa fa-circle-o icon" aria-hidden="true"></i>Czech</a></li>
-							<li><a href=""><i class="fa fa-circle-o icon" aria-hidden="true"></i>English</a></li>
+						    	<li><a href="" class="current">Czech</a></li>
+							<li><a href="">English</a></li>
 						</ul>
 					</li>
 
 					<!-- dashboard -->
-					<li class="hidden menu">
+					<li>
 						<span class="clear">
 							<span class="float left">Dashboard</span>
 							<span class="float right"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
 						</span>
 						<ul>
-						    	<li><a href=""><i class="fa fa-circle-o icon" aria-hidden="true"></i>Home</a></li>
-							<li><a href=""><i class="fa fa-circle-o icon" aria-hidden="true"></i>Settings</a></li>
-							<li><a href=""><i class="fa fa-circle-o icon" aria-hidden="true"></i>Notifications</a></li>
+						    	<li><a href="">Home</a></li>
+							<li><a href="">Settings</a></li>
+							<li><a href="">Notifications<span class="notifi">3</span></a></li>
 						</ul>
 					</li>
 
@@ -78,8 +75,8 @@
 							<span class="float right"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
 						</span>
 						<ul>
-						    	<li><a href=""><i class="fa fa-circle-o icon" aria-hidden="true"></i>Add</a></li>
-							<li><a href=""><i class="fa fa-circle-o icon" aria-hidden="true"></i>List</a></li>
+						    	<li><a href="">Add</a></li>
+							<li><a href="">List</a></li>
 						</ul>
 					</li>
 
@@ -90,8 +87,8 @@
 							<span class="float right"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
 						</span>
 						<ul>
-						    	<li><a href=""><i class="fa fa-circle-o icon" aria-hidden="true"></i>Registred</a></li>
-							<li><a href=""><i class="fa fa-circle-o icon" aria-hidden="true"></i>Banned</a></li>
+						    	<li><a href="">Registred</a></li>
+							<li><a href="">Banned</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -106,20 +103,19 @@
 
 				<!-- dashboard menu -->
 				<div class="float left">
-					<ul class="header-menu">
-						<li><a href="" class="current"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a></li>
-						<li><a href=""><i class="fa fa-cog" aria-hidden="true"></i><span>Settings</span></a></li>
-						<li><a href=""><i class="fa fa-bell-o" aria-hidden="true"></i><span>Notification<span class="notifications">3</span></span></a></li>
+					<ul class="breadcrumb">
+						<li><a href=""><i class="fa fa-square-o" aria-hidden="true"></i>Dashboard</a></li>
+						<li><a href="" class="current"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Sample</a></li>
 					</ul>
 				</div>
 
-				<!-- user panel -->
+				<!-- logged in user -->
 				<div class="float right user panel">
 
-					<!-- user and gravatar -->
+					<!-- user data -->
 					<div class="float left logged in">
 						<ul class="clear">
-							<li class="user float left">You login as John Doe Master</li>
+							<li class="user float left">You login as John Doe</li>
 							<li class="gravatar float left"><img src="img/user.png" alt="user"></li>
 						</ul>
 					</div>
@@ -136,9 +132,9 @@
 							</div>
 
 							<!-- show or hide menu -->
-							<ul class="expand-dropdown">
-								<li><a href="#" class="top">Profile</a></li>
-								<li><a href="#" class="bottom">Logout</a></li>
+							<ul class="expand-dropdown bottom">
+								<li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i>Profile</a></li>
+								<li><a href="#" class="bottom"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
 							</ul>
 						</div>
 					</div>
@@ -148,91 +144,9 @@
 
 		<!-- content -->
 		<div class="content">
-			<div class="content-box">
-				<h4>Dashboard</h4>
-			    	<form>
-					<fieldset>
-						<legend>Form style</legend>
-						<div class="row">
-							<div class="six columns">
-								<input type="text" placeholder="Username" class="full width">
-								<i class="help">This one help text.</i>
-							</div>
-							<div class="six columns">
-								<input type="password" placeholder="Password" required class="full width">
-								<i class="help">This one help text.</i>
-							</div>
-						</div>
-					</fieldset>
-				    	<div class="align right">
-						<input type="submit" class="button common" value="Submit">
-					</div>
-				</form>
-			</div>
-
-			<div class="content-box">
-				<h4>Table style</h4>
-				<table class="full width">
-					<tr>
-						<th>#</th>
-						<th>Username</th>
-						<th>Email</th>
-						<th>Action</th>
-					</tr>
-					<tr class="default">
-						<td>1</td>
-						<td>Root</td>
-						<td>root@domain.com</td>
-						<td>
-							<a href="" class="action-button edit" data-tooltip="Edit"><i class="fa fa-pencil"></i></a>
-							<a href="" class="action-button delete" data-tooltip="Delete"><i class="fa fa-trash"></i></a>
-							<a href="#root" class="action-button detail" data-tooltip="Details"><i class="fa fa-search"></i></a>
-						</td>
-					</tr>
-					<tr class="default">
-						<td>2</td>
-						<td>Admin</td>
-						<td>admin@domain.com</td>
-						<td>
-							<a href="" class="action-button edit" data-tooltip="Edit"><i class="fa fa-pencil"></i></a>
-							<a href="" class="action-button delete" data-tooltip="Delete"><i class="fa fa-trash"></i></a>
-							<a href="#root" class="action-button detail" data-tooltip="Details"><i class="fa fa-search"></i></a>
-						</td>
-					</tr>
-					<tr class="default">
-						<td>3</td>
-						<td>User</td>
-						<td>user@domain.com</td>
-						<td>
-							<a href="" class="action-button edit" data-tooltip="Edit"><i class="fa fa-pencil"></i></a>
-							<a href="" class="action-button delete" data-tooltip="Delete"><i class="fa fa-trash"></i></a>
-							<a href="#root" class="action-button detail" data-tooltip="Details"><i class="fa fa-search"></i></a>
-						</td>
-					</tr>
-				</table>
-
-				<!-- modal window -->
-				<div id="root" class="modal">
-					<div>
-						<a href="#close" title="Close" class="close align center"><i class="fa fa-times" aria-hidden="true"></i></a>
-						<h2>Root</h2>
-						<p>root@domain.com</p>
-					</div>
-				</div>
-				<div id="admin" class="modal">
-					<div>
-						<a href="#close" title="Close" class="close align center"><i class="fa fa-times" aria-hidden="true"></i></a>
-						<h2>Admin</h2>
-						<p>admin@domain.com</p>
-					</div>
-				</div>
-				<div id="user" class="modal">
-					<div>
-						<a href="#close" title="Close" class="close align center"><i class="fa fa-times" aria-hidden="true"></i></a>
-						<h2>User</h2>
-						<p>user@domain.com</p>
-					</div>
-				</div>
+			<div class="box">
+				<h4>Sample</h4>
+			    	Content...
 			</div>
 		</div>
 	</div>

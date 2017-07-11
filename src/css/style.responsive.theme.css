@@ -1,0 +1,32 @@
+
+/*
+    theme style sidebar menu
+*/
+.nav .click { color: #717377; }
+.nav .click .menu:hover { background-color: #272a30; }
+
+.sidebar .title {
+    background-color: #393c45;
+         font-weight: 500;
+               color: white;
+}
+
+.sidebar ul.menu { background-color: #2b2e35; }
+.sidebar ul.menu li { color: #717377; }
+.sidebar ul.menu li a { color: #dfe1e7; }
+.sidebar ul.menu li a:hover {
+    background-color: #393c45;
+               color: white;
+}
+
+.sidebar ul.menu li a.current {
+    color: #10a2f1;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .sidebar {
+	background-color: #2b2e35;
+    }
+
+}

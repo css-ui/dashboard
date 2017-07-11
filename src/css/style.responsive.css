@@ -35,6 +35,7 @@
 
 .sidebar ul.menu {
     background-color: white;
+      padding-bottom: 15px;
           list-style: none;
               margin: 0;
 }
@@ -46,21 +47,20 @@
 
 .sidebar ul.menu li {
     line-height: 38px;
-         margin: 0;
+    font-weight: 500;
+    padding-top: 15px;
 	  color: #353637;
 }
 
 .sidebar ul.menu li ul li {
-    font-size: 1.125em;
+    padding-top: 0;
+      font-size: 1.125em;
+         margin: 0;
 }
 
 .sidebar ul.menu li span span {
     padding: 0 15px 0 25px;
     display: block;
-}
-
-.sidebar ul.menu li.top {
-    padding-top: 15px;
 }
 
 .sidebar ul.menu li .icon {
@@ -93,14 +93,14 @@
 
     .sidebar {
 	background-color: white;
-	        position: absolute;
+	        position: fixed;
 		  bottom: 0;
-                   width: 230px;
+                   width: 250px;
                      top: 0;
     }
 
     .wrapping {
-	margin-left: 230px;
+	margin-left: 250px;
     }
 
 }

@@ -3,56 +3,61 @@
     dashboard
 */
 .header {
-    background-color: white;
+    background-color: #fefefe;
+       border-bottom: 1px solid #f4f4f4;
              display: none;
 	     padding: 15px 20px;
 	      height: 69px;
 }
 
 /*
+    Notifications
+*/
+span.notifi {
+    background-color: #10a2f1;
+       border-radius: 3px;
+         margin-left: 30px;
+	   font-size: smaller;
+	     padding: 0 5px 2px;
+	       color: #2b2e35;
+}
+
+/*
     dashboard header menu
 */
-.header ul.header-menu {
+.header ul.breadcrumb  {
     list-style: none;
         margin: 3px 0 0 15px;
 }
 
-.header ul.header-menu li {
+.header ul.breadcrumb li {
     display: inline-block;
-     margin: 0 40px 0 0;
+     margin: 0 10px 0 0;
 }
 
-.header ul.header-menu li a i.fa {
-    font-size: 1.5em;
-     position: relative;
-          top: 2px;
+.header ul.breadcrumb li a i.fa {
+    padding-right: 10px;
+        font-size: 1.25em;
+         position: relative;
+              top: 2px;
 }
 
-.header ul.header-menu li a span {
+.header ul.breadcrumb li a span {
     margin-left: 15px;
 }
 
-.header ul.header-menu li a span span.notifications {
-    background-color: #ff7815;
-       border-radius: 30px;
-         margin-left: 15px;
-	   font-size: 0.75em;
-             padding: 1px 6px 2px 6px;
-	       color: white;
-}
-
-.header ul.header-menu li a {
+.header ul.breadcrumb li a {
     text-decoration: none;
               color: #858585;
 }
 
-.header ul.header-menu li a:hover,
-.header ul.header-menu li a.current {
-    color: #353637;
+.header ul.breadcrumb li a:hover,
+.header ul.breadcrumb li a.current {
+    color: #10a2f1;
 }
 
 /*
-    user panel
+    user display in header
 */
 .user.panel {
     display: none;
@@ -80,21 +85,56 @@
 }
 
 /*
+    user logged display in sidebar
+*/
+.logged.sidebar {
+    display: block;
+}
+
+.logged.sidebar ul {
+    background-color: #272a30;
+       margin-bottom: 0;
+             padding: 30px 0 10px;
+	       color: #717377;
+}
+
+.logged.sidebar li {
+    list-style: none;
+}
+
+.logged.sidebar li.username {
+    font-weight: 500;
+}
+
+/*
     content
 */
 .content {
     padding: 15px 25px;
 }
 
-.content-box {
-    background-color: white;
+.content .box {
+    display: block;
+}
+
+.content .box .style {
+    background-color: #fefefe;
        border-radius: 3px;
        margin-bottom: 20px;
              padding: 10px 15px;
+	      border: 1px solid #f4f4f4;
 }
 
+/*
+    content form style
+*/
 .content form fieldset {
-    background-color: #f4f4f4;
+    background-color: #fefefe;
+        border-color: #f4f4f4;
+}
+
+.content form {
+    margin-bottom: 0;
 }
 
 /*
@@ -138,29 +178,22 @@ a.action-button.detail:hover {
 	display: block;
     }
 
-    .hidden.menu {
-	display: none;
-    }
-
     .content {
 	padding: 15px 35px;
     }
-
-}
-
-@media only screen and (min-width: 1024px) {
 
     .user.panel {
 	display: block;
     }
 
-    .logged.in ul li.user {
+    .logged.in ul li.user,
+    .logged.sidebar {
 	display: none;
     }
 
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1024px) {
 
     .logged.in ul li.user {
 	display: block;
