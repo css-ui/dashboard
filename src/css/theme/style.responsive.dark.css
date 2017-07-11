@@ -1,6 +1,6 @@
 
 /*
-    theme style sidebar menu
+    dark theme sidebar menu
 */
 .nav .click { color: #717377; }
 .nav .click .menu:hover { background-color: #272a30; }
@@ -23,10 +23,25 @@
     color: #10a2f1;
 }
 
+/*
+    notifications
+*/
+.sidebar span.notifi {
+    background-color: #10a2f1;
+	       color: #2b2e35;
+}
+
 @media only screen and (min-width: 768px) {
 
     .sidebar {
 	background-color: #2b2e35;
     }
 
+}
+
+/*
+    simplebar color
+*/
+.simplebar-scrollbar {
+    background: #858585;
 }

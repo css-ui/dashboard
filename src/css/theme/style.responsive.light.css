@@ -1,0 +1,47 @@
+
+/*
+    light theme sidebar menu
+*/
+.nav .click { color: white; }
+.nav .click .menu:hover { background-color: #3dbbff; }
+
+.sidebar .title {
+    background-color: #10a2f1;
+         font-weight: 500;
+               color: white;
+}
+
+.sidebar ul.menu { background-color: white; }
+.sidebar ul.menu li { color: #bfbfbf; }
+.sidebar ul.menu li a { color: #7b7d7e; }
+.sidebar ul.menu li a:hover {
+    background-color: #fbfbfb;
+               color: #353637;
+}
+
+.sidebar ul.menu li a.current {
+    color: #0094e3;
+}
+
+/*
+    notifications
+*/
+.sidebar span.notifi {
+    background-color: #10a2f1;
+	       color: white;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .sidebar {
+	background-color: white;
+    }
+
+}
+
+/*
+    simplebar color
+*/
+.simplebar-scrollbar {
+    background: #c4c4c4;
+}
