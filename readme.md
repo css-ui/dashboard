@@ -1,3 +1,3 @@
 ## Dashboard template
 
-Simple dashboard template, based on CSS UI and jQuery.
+Simple dashboard template, based on CSS UI.
