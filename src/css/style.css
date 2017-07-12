@@ -2,7 +2,7 @@
 /*
     import css styles
 */
-@import url(https://css-ui.github.io/css/css.ui.min.css);
+@import url(https://css-ui.github.io/css/cssui/1.0.2/css.ui.min.css);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url(style.responsive.css);
 @import url(style.dropdown.css);
