@@ -3,8 +3,7 @@
     dashboard
 */
 .header {
-    background-color: #fefefe;
-       border-bottom: 1px solid #f4f4f4;
+    background-color: #fafafa;
              display: none;
 	     padding: 15px 20px;
 	      height: 69px;
@@ -36,12 +35,12 @@
 
 .header ul.breadcrumb li a {
     text-decoration: none;
-              color: #858585;
+              color: #bfbfbf;
 }
 
 .header ul.breadcrumb li a:hover,
 .header ul.breadcrumb li a.current {
-    color: #10a2f1;
+    color: #7b7d7e;
 }
 
 /*
@@ -63,7 +62,7 @@
 .logged.in ul li.user {
     margin-right: 20px;
       margin-top: 7px;
-           color: #858585;
+           color: #7b7d7e;
 }
 
 .logged.in ul li.gravatar img {
@@ -105,12 +104,11 @@
     display: block;
 }
 
-.content .box .style {
-    background-color: #fefefe;
+.content .box.style {
+    background-color: white;
        border-radius: 3px;
        margin-bottom: 20px;
              padding: 10px 15px;
-	      border: 1px solid #f4f4f4;
 }
 
 /*
