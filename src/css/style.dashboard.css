@@ -79,14 +79,14 @@
 }
 
 .logged.sidebar ul {
-    background-color: #272a30;
+    background-color: #f0f0f0;
        margin-bottom: 0;
              padding: 30px 0 10px;
-	       color: #717377;
 }
 
 .logged.sidebar li {
     list-style: none;
+         color: #7b7d7e;
 }
 
 .logged.sidebar li.username {
