@@ -79,18 +79,27 @@
 }
 
 .logged.sidebar ul {
-    background-color: #f0f0f0;
+    background-color: white;
        margin-bottom: 0;
-             padding: 30px 0 10px;
+             padding: 15px 0 10px 25px;
 }
 
 .logged.sidebar li {
     list-style: none;
+        margin: 0;
          color: #7b7d7e;
 }
 
-.logged.sidebar li.username {
-    font-weight: 500;
+.logged.sidebar li.user {
+    padding-left: 15px;
+     font-weight: 500;
+      margin-top: 8px;
+}
+
+.logged.in ul li.gravatar img {
+    border-radius: 30px;
+        max-width: 40px;
+	  display: block;
 }
 
 /*
