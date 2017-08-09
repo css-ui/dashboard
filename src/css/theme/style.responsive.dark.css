@@ -12,15 +12,15 @@
 }
 
 .sidebar ul.menu { background-color: #2b2e35; }
-.sidebar ul.menu li { color: #717377; }
-.sidebar ul.menu li a { color: #dfe1e7; }
+.sidebar ul.menu li { color: #646b7c; }
+.sidebar ul.menu li a { color: #74bdf5; }
 .sidebar ul.menu li a:hover {
     background-color: #393c45;
-               color: white;
+               color: #74bdf5;
 }
 
 .sidebar ul.menu li a.current {
-    color: #10a2f1;
+    color: white;
 }
 
 /*
@@ -43,5 +43,5 @@
     simplebar color
 */
 .simplebar-scrollbar {
-    background: #858585;
+    background: #646b7c;
 }
