@@ -106,7 +106,7 @@
     content
 */
 .content {
-    padding: 15px 25px;
+    padding: 0 25px;
 }
 
 .content .box {
@@ -174,7 +174,7 @@ a.action-button.detail:hover {
     }
 
     .content {
-	padding: 15px 35px;
+	padding: 0 35px;
     }
 
     .user.panel {

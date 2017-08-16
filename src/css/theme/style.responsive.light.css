@@ -15,8 +15,8 @@
 .sidebar ul.menu li { color: #bfbfbf; }
 .sidebar ul.menu li a { color: #7b7d7e; }
 .sidebar ul.menu li a:hover {
-    background-color: #f7f7f7;
-               color: #353637;
+    background-color: #e8e8e8;
+               color: #7b7d7e;
 }
 
 .sidebar ul.menu li a.current {
@@ -40,8 +40,18 @@
 }
 
 /*
-    simplebar color
+    simplebar
 */
 .simplebar-scrollbar {
     background: #cacaca;
+}
+
+/*
+    nanobar
+*/
+.bar {
+    transition: height .3s;
+    background: #10a2f1;
+        height: 100%;
+         width: 0;
 }

@@ -13,10 +13,10 @@
 
 .sidebar ul.menu { background-color: #2b2e35; }
 .sidebar ul.menu li { color: #646b7c; }
-.sidebar ul.menu li a { color: #74bdf5; }
+.sidebar ul.menu li a { color: #a1abc2; }
 .sidebar ul.menu li a:hover {
     background-color: #393c45;
-               color: #74bdf5;
+               color: #a1abc2;
 }
 
 .sidebar ul.menu li a.current {
@@ -27,7 +27,7 @@
     notifications
 */
 .sidebar span.notifi {
-    background-color: #10a2f1;
+    background-color: #3bb9fe;
 	       color: #2b2e35;
 }
 
@@ -40,8 +40,18 @@
 }
 
 /*
-    simplebar color
+    simplebar
 */
 .simplebar-scrollbar {
     background: #646b7c;
+}
+
+/*
+    nanobar
+*/
+.bar {
+    transition: height .3s;
+    background: #393c45;
+        height: 100%;
+         width: 0;
 }

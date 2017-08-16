@@ -29,10 +29,3 @@ body {
       width: 100%;
         top: 0
 }
-
-.bar {
-    transition: height .3s;
-    background: #10a2f1;
-        height: 100%;
-         width: 0;
-}
