@@ -2,9 +2,10 @@
 /*
     import css styles
 */
-@import url(https://css-ui.github.io/css/css.ui.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-@import url(style.responsive.css);
+@import url(https://css-ui.github.io/css/cssui.min.css);
+@import url(style.menu.css);
 @import url(style.dropdown.css);
 @import url(style.dashboard.css);
 @import url(style.tables.css);
@@ -16,8 +17,8 @@
     elements
 */
 body {
-    background-color: #f4f4f4;
-         font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f2f2f2;
+          min-height: 100px;
 }
 
 /*

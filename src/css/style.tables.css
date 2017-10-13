@@ -1,6 +1,6 @@
 
 /*
-    style tables
+    tables
 */
 table {
     border-collapse: collapse;
@@ -11,13 +11,13 @@ table th {
     padding: 5px 8px;
 }
 
+table td {
+    color: #575757;
+}
+
 table th:first-child,
 table td:first-child {
     padding-left: 8px;
-}
-
-table td {
-    color: #575757;
 }
 
 /*
@@ -72,21 +72,21 @@ table tr.success:nth-child(odd) td  {
 }
 
 /*
-    danger
+    warning
 */
-table tr.danger th {
+table tr.warning th {
     border-color: #d46a6a;
 }
 
-table tr.danger td {
+table tr.warning td {
     border-color: #d46a6a;
            color: #542121;
 }
 
-table tr.danger:nth-child(even) td {
+table tr.warning:nth-child(even) td {
     background-color: #f19f9f;
 }
 
-table tr.danger:nth-child(odd) td  {
+table tr.warning:nth-child(odd) td  {
     background-color: #e37b7b;
 }

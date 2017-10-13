@@ -7,7 +7,7 @@
 
 .sidebar .title {
     background-color: #393c45;
-         font-weight: 500;
+         font-weight: 600;
                color: white;
 }
 
@@ -44,14 +44,4 @@
 */
 .simplebar-scrollbar {
     background: #646b7c;
-}
-
-/*
-    nanobar
-*/
-.bar {
-    transition: height .3s;
-    background: #393c45;
-        height: 100%;
-         width: 0;
 }
