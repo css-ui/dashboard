@@ -1,6 +1,6 @@
 ## Dashboard template
 
-Simple dashboard template, based on CSS UI.
+Simple dashboard template.
 
 ## Info
 
