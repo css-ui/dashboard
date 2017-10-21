@@ -2,7 +2,7 @@
 /*
     modal box
 */
-.modal {
+.modal-box {
       background-color: rgba(0,0,0,0.8);
         pointer-events: none;
             transition: opacity 100ms ease-in;
@@ -15,12 +15,12 @@
 		   top: 0;
 }
 
-.modal:target {
+.modal-box:target {
     pointer-events: auto;
            opacity: 1;
 }
 
-.modal > div {
+.modal-box > div {
     background-color: white;
        border-radius: 6px;
             position: relative;
@@ -29,7 +29,7 @@
 	       width: 400px;
 }
 
-.modal .close {
+.modal-box .modal-close {
     background-color: #444;
      text-decoration: none;
        border-radius: 30px;
@@ -41,6 +41,6 @@
 	         top: -10px;
 }
 
-.modal .close:hover {
+.modal-box .modal-close:hover {
     background-color: #585858;
 }
