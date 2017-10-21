@@ -3,15 +3,15 @@
     responsive menu
 */
 .nav .click {
-     cursor: pointer;
-     margin: 20px 10px 10px;
-      float: right;
+    cursor: pointer;
+    margin: 5px 20px 0 0;
+     float: right;
 }
 
 .nav .click .menu {
     border-radius: 30px;
         font-size: 14px;
-          padding: 8px 9px;
+          padding: 7px 8px;
 }
 
 .nav .responsive { display: none; }
@@ -21,9 +21,9 @@
     sidebar
 */
 .sidebar .title {
-    font-size: 1.375em;
-      padding: 17px 20px 0 25px;
-       height: 69px;
+    font-size: 1.125em;
+      padding: 5px 20px 0 25px;
+       height: 42px;
 }
 
 /*
@@ -32,7 +32,7 @@
 .sidebar span.notifi {
     border-radius: 3px;
       margin-left: 30px;
-        font-size: smaller;
+      font-weight: 600;
 	  padding: 0 5px 2px;
 }
 
@@ -48,14 +48,14 @@
 }
 
 .sidebar ul.menu li {
-    line-height: 38px;
-    font-weight: 600;
-    padding-top: 15px;
+    line-height: 33px;
+     margin-top: 15px;
+        padding: 0;
 }
 
 .sidebar ul.menu li ul li {
     padding-top: 0;
-      font-size: 1.125em;
+      font-size: 1em;
          margin: 0;
 }
 
@@ -82,18 +82,19 @@
     .sidebar ul.menu {
 	height: 660px;
     }
+
     .nav .click { visibility: hidden; }
     .nav .responsive { display: block; }
 
     .sidebar {
 	position: fixed;
 	  bottom: 0;
-	   width: 250px;
+	   width: 230px;
 	     top: 0;
     }
 
     .content-wrapper {
-	margin-left: 250px;
+	margin-left: 230px;
     }
 
 }

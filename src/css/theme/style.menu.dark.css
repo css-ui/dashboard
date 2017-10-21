@@ -1,40 +1,46 @@
 
 /*
-    dark theme sidebar menu
+    light theme sidebar menu
 */
-.nav .click { color: #717377; }
-.nav .click .menu:hover { background-color: #272a30; }
-
-.sidebar .title {
-    background-color: #393c45;
-         font-weight: 600;
-               color: white;
+.nav .click { color: white; }
+.nav .click .menu { color: #6f788d; }
+.nav .click .menu:hover {
+    background-color: #404757;
+               color: #e6e9ed;
 }
 
-.sidebar ul.menu { background-color: #2b2e35; }
-.sidebar ul.menu li { color: #646b7c; }
-.sidebar ul.menu li a { color: #a1abc2; }
+.sidebar .title {
+    background-color: #333c48;
+         font-weight: 600;
+               color: #e6e9ed;
+}
+
+.sidebar ul.menu { background-color: #262a34; }
+.sidebar ul.menu li { color: #5e6776; }
+.sidebar ul.menu li a { color: #7d899c; }
 .sidebar ul.menu li a:hover {
-    background-color: #393c45;
-               color: #a1abc2;
+    background-color: #2e333e;
+         font-weight: 600;
+               color: #e95656;
 }
 
 .sidebar ul.menu li a.current {
-    color: white;
+    border-right: 2px solid #e95656;
+     font-weight: 600;
+           color: #e6e9ed;
 }
 
 /*
     notifications
 */
 .sidebar span.notifi {
-    background-color: #3bb9fe;
-	       color: #2b2e35;
+    color: #e95656;
 }
 
 @media only screen and (min-width: 768px) {
 
     .sidebar {
-	background-color: #2b2e35;
+	background-color: #262a34;
     }
 
 }
@@ -43,5 +49,6 @@
     simplebar
 */
 .simplebar-scrollbar {
-    background: #646b7c;
+    background: #596072;
+         width: 5px;
 }

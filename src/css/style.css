@@ -4,6 +4,7 @@
 */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin-ext);
 @import url(https://css-ui.github.io/css/cssui.min.css);
 @import url(style.menu.css);
 @import url(style.dropdown.css);
@@ -18,6 +19,7 @@
 */
 body {
     background-color: #f2f2f2;
+         font-family: 'Open Sans', sans-serif;
           min-height: 100px;
 }
 

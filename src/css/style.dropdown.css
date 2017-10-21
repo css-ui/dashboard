@@ -4,7 +4,7 @@
 */
 .dropdown {
     margin-left: 12px;
-     margin-top: 9px;
+     margin-top: 6px;
        position: relative;
 }
 
@@ -23,16 +23,21 @@
 
 .dropdown ul.expand-dropdown {
     list-style: none;
-    margin-top: 19px;
+    margin-top: 8px;
       position: absolute;
        display: none;
-         right: 0;
+         right: 12px;
 	   top: 100%;
 }
 
 .dropdown ul.expand-dropdown li {
-    min-width: 180px;
+    min-width: 160px;
        margin: 0;
+}
+
+.dropdown ul.expand-dropdown li a.top {
+    border-top-right-radius: 3px;
+     border-top-left-radius: 3px;
 }
 
 .dropdown ul.expand-dropdown li a.bottom {
@@ -54,5 +59,7 @@
 }
 
 .dropdown ul.expand-dropdown li a:hover {
-    background-color: #e8e8e8;
+    background-color: #fbfbfb;
+         font-weight: 600;
+	       color: #e95656;
 }

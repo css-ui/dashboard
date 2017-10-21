@@ -23,70 +23,78 @@ table td:first-child {
 /*
     default
 */
+table tr.default th {
+    border: none;
+}
+
+table tr.default td {
+    border: none;
+}
+
 table tr.default:nth-child(even) {
-    background-color: white;
+    background-color: #f2f2f2;
 }
 
 table tr.default:nth-child(odd)  {
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 /*
     primary
 */
 table tr.primary th {
-    border-color: #7cbae2;
+    border: none;
 }
 
 table tr.primary td {
-    border-color: #7cbae2;
-           color: #1f4259;
+    border: none;
+     color: #27667b;
 }
 
 table tr.primary:nth-child(even) td {
-    background-color: #a0d3f4;
+    background-color: #c1edfb;
 }
 
 table tr.primary:nth-child(odd) td  {
-    background-color: #89c8f1;
+    background-color: white;
 }
 
 /*
     success
 */
 table tr.success th {
-    border-color: #80c75f;
+    border: none;
 }
 
 table tr.success td {
-    border-color: #80c75f;
-           color: #315620;
+    border: none;
+     color: #277b35;
 }
 
 table tr.success:nth-child(even) td {
-    background-color: #aaea8d;
+    background-color: #bdf3c4;
 }
 
 table tr.success:nth-child(odd) td  {
-    background-color: #8edc6b;
+    background-color: white;
 }
 
 /*
     warning
 */
 table tr.warning th {
-    border-color: #d46a6a;
+    border: none;
 }
 
 table tr.warning td {
-    border-color: #d46a6a;
-           color: #542121;
+    border: none;
+     color: #7b2727;
 }
 
 table tr.warning:nth-child(even) td {
-    background-color: #f19f9f;
+    background-color: #f5b9b9;
 }
 
 table tr.warning:nth-child(odd) td  {
-    background-color: #e37b7b;
+    background-color: white;
 }
