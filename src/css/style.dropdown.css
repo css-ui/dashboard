@@ -46,7 +46,7 @@
 }
 
 .dropdown ul.expand-dropdown li a {
-    background-color: #f2f2f2;
+    background-color: #f4f4f4;
      text-decoration: none;
        margin-bottom: -1px;
              display: block;
@@ -59,7 +59,7 @@
 }
 
 .dropdown ul.expand-dropdown li a:hover {
-    background-color: #fbfbfb;
+    background-color: #f9f9f9;
          font-weight: 600;
 	       color: #e95656;
 }
