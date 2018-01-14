@@ -4,7 +4,7 @@
 */
 .nav .click {
     cursor: pointer;
-    margin: 5px 20px 0 0;
+    margin: 10px 20px 0 0;
      float: right;
 }
 
@@ -22,8 +22,8 @@
 */
 .sidebar .title {
     font-size: 1.125em;
-      padding: 5px 20px 0 25px;
-       height: 42px;
+      padding: 10px 20px 0 25px;
+       height: 52px;
 }
 
 /*
@@ -59,16 +59,11 @@
          margin: 0;
 }
 
-.sidebar ul.menu li span span {
-    padding: 0 15px 0 25px;
-    display: block;
-}
-
-.sidebar ul.menu li .icon {
-    margin-right: 10px;
-       font-size: 12px;
-        position: relative;
-	     top: -2px;
+.sidebar ul.menu li span.name {
+    text-transform: uppercase;
+      padding-left: 25px;
+         font-size: 0.83em;
+           display: block;
 }
 
 .sidebar ul.menu li a {

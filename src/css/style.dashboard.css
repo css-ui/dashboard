@@ -3,10 +3,9 @@
     dashboard
 */
 .header {
-    background-color: #f2f2f2;
-             display: none;
-	     padding: 2px 20px;
-	      height: 42px;
+    display: none;
+    padding: 2px 20px;
+     height: 52px;
 }
 
 /*
@@ -14,7 +13,7 @@
 */
 .header ul.breadcrumb  {
     list-style: none;
-        margin: 3px 0 0 15px;
+        margin: 8px 0 0 15px;
 }
 
 .header ul.breadcrumb li {
@@ -61,14 +60,14 @@
 
 .logged.in ul li.user {
     margin-right: 20px;
-      margin-top: 3px;
+      margin-top: 8px;
            color: #7b7d7e;
 }
 
 .logged.in ul li.gravatar img {
     border-radius: 30px;
        margin-top: 4px;
-        max-width: 40px;
+        max-width: 50px;
 	  display: block;
 }
 
@@ -80,7 +79,7 @@
 }
 
 .logged.sidebar ul {
-    background-color: #e95656;
+    background-color: #414141;
        margin-bottom: 0;
              padding: 15px 0 10px 25px;
 }
@@ -93,18 +92,23 @@
 
 .logged.sidebar li a {
     margin-left: 5px;
-          color: white;
+          color: #ddd;
+}
+
+.logged.sidebar li a:hover {
+    color: white;
 }
 
 .logged.sidebar li.user {
-    padding-left: 15px;
-     font-weight: 600;
-      margin-top: 8px;
+    font-weight: 600;
+        padding: 10px 0 0 25px;
+	color: #ddd;
 }
 
 .logged.in ul li.gravatar img {
     border-radius: 30px;
-        max-width: 30px;
+       margin-top: 6px;
+        max-width: 36px;
 	  display: block;
 }
 
@@ -123,7 +127,7 @@
     background-color: white;
        border-radius: 3px;
        margin-bottom: 20px;
-             padding: 10px 15px;
+             padding: 25px;
 }
 
 /*

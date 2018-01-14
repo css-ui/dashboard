@@ -4,7 +4,7 @@
 */
 .dropdown {
     margin-left: 12px;
-     margin-top: 6px;
+     margin-top: 10px;
        position: relative;
 }
 
@@ -14,16 +14,16 @@
     border-radius: 30px;
         font-size: 14px;
           padding: 2px 12px;
-            color: #7b7d7e;
+            color: #acacac;
 }
 
 .dropdown .employ-toggle.click:hover {
-    background-color: #e8e8e8;
+    background-color: white;
 }
 
 .dropdown ul.expand-dropdown {
     list-style: none;
-    margin-top: 8px;
+    margin-top: 14px;
       position: absolute;
        display: none;
          right: 12px;
@@ -59,7 +59,7 @@
 }
 
 .dropdown ul.expand-dropdown li a:hover {
-    background-color: #f9f9f9;
+    background-color: #ebebeb;
          font-weight: 600;
 	       color: #e95656;
 }
