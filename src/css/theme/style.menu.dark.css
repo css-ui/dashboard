@@ -3,52 +3,59 @@
     light theme sidebar menu
 */
 .nav .click { color: white; }
-.nav .click .menu { color: #6f788d; }
+.nav .click .menu {
+    transition: all 0.1s ease-in-out;
+         color: #656c7c;
+}
+
 .nav .click .menu:hover {
-    background-color: #404757;
-               color: #e6e9ed;
+    background-color: #262a34;
 }
 
 .sidebar .title {
-    background-color: #333c48;
+    background-color: #283244;
          font-weight: 600;
-               color: #e6e9ed;
+               color: white;
 }
 
-.sidebar ul.menu { background-color: #262a34; }
-.sidebar ul.menu li { color: #5e6776; }
-.sidebar ul.menu li a { color: #808c9f; }
+.sidebar ul.menu { background-color: #1d222c; }
+.sidebar ul.menu li { color: #6a6e76; }
+.sidebar ul.menu li a { color: #9197a1; }
 .sidebar ul.menu li a:hover {
-    background-color: #2e333e;
+    background-color: #27303f;
          font-weight: 600;
-               color: #e95656;
+               color: #10a2f1;
 }
 
 .sidebar ul.menu li a.current {
-    border-right: 2px solid #e95656;
+    border-right: 2px solid #10a2f1;
      font-weight: 600;
-           color: #e6e9ed;
+           color: #10a2f1;
 }
 
 /*
     notifications
 */
 .sidebar span.notifi {
-    color: #e95656;
+    color: #10a2f1;
 }
 
 @media only screen and (min-width: 768px) {
 
     .sidebar {
-	background-color: #262a34;
+	background-color: #1d222c;
     }
 
 }
 
 /*
-    simplebar
+    perfect scrollbar
 */
-.simplebar-scrollbar {
-    background: #596072;
-         width: 5px;
+.ps__thumb-y {
+    background-color: #656c7c;
+}
+
+.ps__rail-y:hover > .ps__thumb-y,
+.ps__rail-y:focus > .ps__thumb-y {
+    background-color: #656c7c;
 }

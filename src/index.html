@@ -7,8 +7,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>CSS UI - Dashboard</title>
 
-	<!-- CSS styles -->
+	<!-- css styles -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.3.0/css/perfect-scrollbar.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin-ext">
+	<link rel="stylesheet" href="https://css-ui.github.io/css/cssui.min.css">
+	<link rel="stylesheet" href="css/style.dropdown.css">
+	<link rel="stylesheet" href="css/style.menu.css">
+	<link rel="stylesheet" href="css/style.dashboard.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<!-- css dropdown themes -->
+	<link rel="stylesheet" href="css/theme/style.dropdown.light.css">
+	<!--<link rel="stylesheet" href="css/theme/style.dropdown.dark.css">-->
 
 	<!-- css sidebar themes -->
 	<link rel="stylesheet" href="css/theme/style.menu.light.css">
@@ -42,7 +54,7 @@
 			<div class="responsive">
 
 				<!-- sidebar menu -->
-				<ul class="menu" data-simplebar>
+				<ul class="menu scrollbar">
 
 					<!-- languages -->
 					<li>
@@ -132,7 +144,7 @@
 
 							<!-- show or hide menu -->
 							<ul class="expand-dropdown">
-								<li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i>Profile</a></li>
+								<li><a href="#" class="top"><i class="fa fa-user-o" aria-hidden="true"></i>Profile</a></li>
 								<li><a href="#" class="bottom"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
 							</ul>
 						</div>
@@ -151,13 +163,41 @@
 	</div>
 
 	<!-- javascript libraries and plugins  -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="js/simplebar.js"></script>
-	<script src="js/jquery.responsive.menu.js"></script>
-	<script src="js/jquery.dropdown.menu.js"></script>
-	<script src="js/nanobar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/nanobar/0.4.2/nanobar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.3.0/perfect-scrollbar.min.js"></script>
 	<script>
-		var nanobar = new Nanobar(); nanobar.go(100);
+		$(function() {
+
+			// perfect scrollbar
+			const ps = new PerfectScrollbar('.scrollbar');
+
+			// responsive sidebar
+			$('.nav .click').on('click', function() {
+				var nav = '.nav .responsive';
+				$(nav).slideToggle('fast');
+				$(window).on('resize', function() {
+					$(window).width() >= 768 ? $(nav).show() : $(nav).hide();
+				});
+			});
+
+			// dropdown menu
+			$('.employ-toggle').on('click', function() {
+				var dropdown = '.expand-dropdown';
+				$(dropdown).fadeToggle('fast');
+				$(dropdown).on('click', function(e) {
+					var target = e.target;
+					var employ = '.employ-toggle';
+					if (!$(target).is(employ) && !$(target).parents().is(employ)) {
+						$(dropdown).hide();
+					}
+				});
+			});
+
+			// nanobar
+			var nanobar = new Nanobar();
+			    nanobar.go(100);
+		});
 	</script>
 </body>
 </html>

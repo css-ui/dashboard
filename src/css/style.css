@@ -1,20 +1,5 @@
 
 /*
-    import css styles
-*/
-@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin-ext);
-@import url(https://css-ui.github.io/css/cssui.min.css);
-@import url(style.menu.css);
-@import url(style.dropdown.css);
-@import url(style.dashboard.css);
-@import url(style.tables.css);
-@import url(style.modal.box.css);
-@import url(style.tooltip.css);
-@import url(simplebar.css);
-
-/*
     elements
 */
 body {
@@ -31,4 +16,26 @@ body {
      height: 2px;
       width: 100%;
         top: 0
+}
+
+.nanobar .bar {
+    transition: height .3s;
+    background: #acacac;
+        height: 100%;
+	 width: 0;
+}
+
+/*
+    custom dropdown menu
+*/
+.dropdown ul.expand-dropdown li a i.fa {
+    padding-right: 12px;
+}
+
+.dropdown ul.expand-dropdown li {
+    min-width: 160px;
+}
+
+.dropdown ul.expand-dropdown {
+    margin-top: 10px;
 }
