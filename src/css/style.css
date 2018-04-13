@@ -28,6 +28,10 @@ body {
 /*
     custom dropdown menu
 */
+.dropdown {
+    margin-top: 10px;
+}
+
 .dropdown ul.expand-dropdown li a i.fa {
     padding-right: 12px;
 }
@@ -38,4 +42,8 @@ body {
 
 .dropdown ul.expand-dropdown {
     margin-top: 10px;
+}
+
+.dropdown .employ-toggle.click:hover {
+    background-color: white;
 }
