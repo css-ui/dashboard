@@ -104,7 +104,7 @@
 	color: #eceef1;
 }
 
-.logged.in ul li.gravatar img {
+.logged.sidebar li.gravatar img {
     border-radius: 30px;
        margin-top: 6px;
         max-width: 36px;
