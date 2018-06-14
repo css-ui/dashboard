@@ -37,9 +37,10 @@
 }
 
 .sidebar ul.menu {
-    list-style: none;
-        height: 460px;
-        margin: 0;
+    font-weight: 600;
+     list-style: none;
+         height: 460px;
+         margin: 0;
 }
 
 .sidebar ul.menu ul {
