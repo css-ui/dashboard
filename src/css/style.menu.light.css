@@ -5,7 +5,7 @@
 .nav .click { color: white; }
 .nav .click .menu {
     transition: all 0.1s ease-in-out;
-         color: #acacac;
+         color: #7f7f7f;
 }
 
 .nav .click .menu:hover {
@@ -20,16 +20,19 @@
 
 .sidebar ul.menu { background-color: white; }
 .sidebar ul.menu li { color: #a8a8a8; }
-.sidebar ul.menu li a { color: #737373; }
-.sidebar ul.menu li a:hover {
+.sidebar ul.menu li ul li a { color: #7f7f7f; }
+.sidebar ul.menu li ul li a i.fa { color: #7f7f7f; }
+.sidebar ul.menu li ul li a:hover {
     background-color: #f4f4f4;
-         font-weight: 600;
                color: #10a2f1;
 }
 
-.sidebar ul.menu li a.current {
-    border-right: 2px solid #10a2f1;
-     font-weight: 600;
+.sidebar ul.menu li ul li a:hover i.fa {
+    color: #10a2f1;
+}
+
+.sidebar ul.menu li ul li a.current {
+    border-right: 3px solid #10a2f1;
            color: #10a2f1;
 }
 

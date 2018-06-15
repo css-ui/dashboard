@@ -22,8 +22,8 @@
 */
 .sidebar .title {
     font-size: 1.125em;
-      padding: 10px 20px 0 25px;
-       height: 52px;
+      padding: 8px 20px 0 25px;
+       height: 48px;
 }
 
 /*
@@ -37,10 +37,9 @@
 }
 
 .sidebar ul.menu {
-    font-weight: 600;
-     list-style: none;
-         height: 460px;
-         margin: 0;
+    list-style: none;
+        height: 460px;
+        margin: 0;
 }
 
 .sidebar ul.menu ul {
@@ -49,15 +48,10 @@
 }
 
 .sidebar ul.menu li {
-    line-height: 33px;
+    font-weight: 600;
+    line-height: 36px;
      margin-top: 15px;
         padding: 0;
-}
-
-.sidebar ul.menu li ul li {
-    padding-top: 0;
-      font-size: 1em;
-         margin: 0;
 }
 
 .sidebar ul.menu li span.name {
@@ -67,10 +61,20 @@
            display: block;
 }
 
-.sidebar ul.menu li a {
+.sidebar ul.menu li ul li {
+    padding-top: 0;
+      font-size: 1em;
+         margin: 0;
+}
+
+.sidebar ul.menu li ul li a {
     text-decoration: none;
        padding-left: 25px;
             display: block;
+}
+
+.sidebar ul.menu li ul li a i.fa {
+    padding-right: 10px;
 }
 
 /*

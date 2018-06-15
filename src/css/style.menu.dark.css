@@ -20,24 +20,27 @@
 
 .sidebar ul.menu { background-color: #1d222c; }
 .sidebar ul.menu li { color: #6a6e76; }
-.sidebar ul.menu li a { color: #9197a1; }
-.sidebar ul.menu li a:hover {
+.sidebar ul.menu li ul li a { color: #9197a1; }
+.sidebar ul.menu li ul li a i.fa { color: #9197a1; }
+.sidebar ul.menu li ul li a:hover {
     background-color: #27303f;
-         font-weight: 600;
-               color: #10a2f1;
+               color: #dce1e9;
 }
 
-.sidebar ul.menu li a.current {
-    border-right: 2px solid #10a2f1;
-     font-weight: 600;
-           color: #10a2f1;
+.sidebar ul.menu li ul li a:hover i.fa {
+    color: #ccd2db;
+}
+
+.sidebar ul.menu li ul li a.current {
+    border-right: 3px solid #dce1e9;
+           color: #dce1e9;
 }
 
 /*
     notifications
 */
 .sidebar span.notifi {
-    color: #10a2f1;
+    color: #dce1e9;
 }
 
 @media only screen and (min-width: 768px) {
