@@ -21,15 +21,11 @@
      margin: 0 10px 0 0;
 }
 
-.header ul.breadcrumb li a i.fa {
+.header ul.breadcrumb li i.fa {
     padding-right: 10px;
         font-size: 18px;
          position: relative;
               top: 2px;
-}
-
-.header ul.breadcrumb li a span {
-    margin-left: 15px;
 }
 
 .header ul.breadcrumb li a {
