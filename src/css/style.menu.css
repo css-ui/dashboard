@@ -44,6 +44,7 @@
 
 .sidebar ul.menu ul {
     list-style: none;
+     font-size: 100%;
         margin: 0;
 }
 
@@ -58,12 +59,10 @@
     text-transform: uppercase;
       padding-left: 25px;
          font-size: 0.83em;
-           display: block;
 }
 
 .sidebar ul.menu li ul li {
     padding-top: 0;
-      font-size: 1em;
          margin: 0;
 }
 
@@ -71,10 +70,6 @@
     text-decoration: none;
        padding-left: 25px;
             display: block;
-}
-
-.sidebar ul.menu li ul li a i.fa {
-    padding-right: 10px;
 }
 
 /*
