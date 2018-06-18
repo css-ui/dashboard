@@ -21,14 +21,9 @@
 .sidebar ul.menu { background-color: white; }
 .sidebar ul.menu li { color: #a8a8a8; }
 .sidebar ul.menu li ul li a { color: #7f7f7f; }
-.sidebar ul.menu li ul li a i.fa { color: #7f7f7f; }
 .sidebar ul.menu li ul li a:hover {
     background-color: #f4f4f4;
                color: #10a2f1;
-}
-
-.sidebar ul.menu li ul li a:hover i.fa {
-    color: #10a2f1;
 }
 
 .sidebar ul.menu li ul li a.current {
