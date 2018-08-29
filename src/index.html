@@ -32,9 +32,7 @@
 	<div class="nav">
 
 		<!-- click menu -->
-		<div class="click">
-			<i class="fa fa-bars menu" aria-hidden="true"></i>
-		</div>
+		<div class="click"></div>
 
 		<!-- sidebar -->
 		<div class="sidebar">
@@ -57,12 +55,12 @@
 				<!-- sidebar menu -->
 				<ul class="menu scrollbar">
 
-					<!-- languages -->
+				    	<!-- translator -->
 					<li>
-						<span class="name">Languages</span>
+						<span class="name">Translate</span>
 						<ul>
-						    	<li><a href="" class="current">Czech</a></li>
-							<li><a href="">English</a></li>
+						    	<li><a href="#">Czech</a></li>
+							<li><a href="#" class="current">English</a></li>
 						</ul>
 					</li>
 
@@ -70,9 +68,31 @@
 					<li>
 						<span class="name">Dashboard</span>
 						<ul>
-						    	<li><a href="">Home</a></li>
-							<li><a href="">Settings</a></li>
-							<li><a href="">Notifications<span class="notifi">3</span></a></li>
+						    	<li><a href="#">Home</a></li>
+							<li class="parent">
+								<a href="#" class="current">Settings</a>
+								<ul class="submenu">
+									<li><a href="#">Timezone</a></li>
+									<li><a href="#" class="current">Permissions</a></li>
+									<li><a href="#">Maintenance</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Notice<span class="notifi">3</span></a></li>
+						</ul>
+					</li>
+
+					<!-- comments -->
+					<li>
+						<span class="name">Coments</span>
+						<ul>
+						    	<li><a href="#">New</a></li>
+							<li class="parent">
+								<a href="#">Settings comments</a>
+								<ul class="submenu">
+									<li><a href="#">Disable</a></li>
+									<li><a href="#">Enable</a></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 
@@ -80,27 +100,8 @@
 					<li>
 						<span class="name">Blog</span>
 						<ul>
-						    	<li><a href="">Add</a></li>
-							<li><a href="">List</a></li>
-						</ul>
-					</li>
-
-					<!-- members -->
-					<li>
-						<span class="name">Members</span>
-						<ul>
-						    	<li><a href="">Registred</a></li>
-							<li><a href="">Banned</a></li>
-						</ul>
-					</li>
-
-					<!-- gallery -->
-					<li>
-						<span class="name">Gallery</span>
-						<ul>
-							<li><a href="">Design</a></li>
-							<li><a href="">People</a></li>
-							<li><a href="">Cars</a></li>
+						    	<li><a href="#" class="parent">Add</a></li>
+							<li><a href="#">List</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -173,13 +174,23 @@
 			// perfect scrollbar
 			const ps = new PerfectScrollbar('.scrollbar');
 
-			// responsive sidebar
+			// responsive navigation
 			$('.nav .click').on('click', function() {
-				var nav = '.nav .responsive';
-				$(nav).slideToggle('fast');
-				$(window).on('resize', function() {
-					$(window).width() >= 768 ? $(nav).show() : $(nav).hide();
-				});
+				$('.nav .responsive').toggleClass('expandable');
+			});
+
+			// active expanded navigation
+			$('ul.menu li').each(function() {
+				if ($(this).children('li.parent a.current').length > 0 ) {
+					$(this).parent().find('ul.submenu').toggle();
+					$(this).parent().find('li.parent').addClass('active');
+				}
+			});
+
+			// dropdown navigation
+			$('ul.menu li a').on('click', function() {
+				$(this).parent('li.parent').toggleClass('active');
+				$(this).parent().find('ul.submenu').slideToggle('fast');
 			});
 
 			// dropdown menu

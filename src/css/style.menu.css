@@ -3,41 +3,45 @@
     responsive menu
 */
 .nav .click {
-    cursor: pointer;
-    margin: 10px 20px 0 0;
-     float: right;
-}
-
-.nav .click .menu {
     border-radius: 30px;
         font-size: 14px;
-          padding: 7px 8px;
+          padding: 3px 8px;
+	   cursor: pointer;
+	   margin: 15px 20px 0 0;
+	    float: right;
+}
+
+.nav .click:before {
+    font-family: "FontAwesome";
+      font-size: 14px;
+        content: "\f0c9";
 }
 
 .nav .responsive { display: none; }
-.nav .expand-responsive { display: block !important; }
+.nav .expandable { display: block; }
 
 /*
     sidebar
 */
 .sidebar .title {
     font-size: 1.188em;
-      padding: 9px 20px 0 25px;
-       height: 48px;
+      padding: 15px 20px 0 25px;
+       height: 56px;
 }
 
 /*
     notifications
 */
 .sidebar span.notifi {
-    border-radius: 3px;
+    border-radius: 30px;
       margin-left: 30px;
-      font-weight: 600;
-	  padding: 0 5px 2px;
+        font-size: small;
+	  padding: 0 6px 1px;
 }
 
 .sidebar ul.menu {
     list-style: none;
+       padding: 0 25px;
         height: 460px;
         margin: 0;
 }
@@ -49,15 +53,13 @@
 }
 
 .sidebar ul.menu li {
-    font-weight: 600;
-    line-height: 36px;
+    line-height: 34px;
      margin-top: 15px;
         padding: 0;
 }
 
 .sidebar ul.menu li span.name {
     text-transform: uppercase;
-      padding-left: 25px;
          font-size: 0.83em;
 }
 
@@ -68,8 +70,26 @@
 
 .sidebar ul.menu li ul li a {
     text-decoration: none;
-       padding-left: 25px;
+      margin-bottom: 2px;
+            padding: 0 10px;
             display: block;
+}
+
+.sidebar ul.menu li ul li ul {
+    padding-left: 10px;
+         display: none;
+          margin: 15px 10px;
+}
+
+.sidebar ul.menu li ul li.parent:before {
+     font-family: "FontAwesome";
+         content: "\f106";
+	  margin: 0 15px 0 0;
+	   float: right;
+}
+
+.sidebar ul.menu li ul li.parent.active:before {
+         content: "\f107";
 }
 
 /*
@@ -96,22 +116,26 @@
 
 @media only screen and (min-width: 768px) {
 
-    .sidebar ul.menu {
-	height: 800px;
-    }
-
-    .nav .click { visibility: hidden; }
+    .nav .click { display: none; }
     .nav .responsive { display: block; }
 
     .sidebar {
 	position: fixed;
 	  bottom: 0;
-	   width: 230px;
+	   width: 285px;
 	     top: 0;
     }
 
     .content-wrapper {
-	margin-left: 230px;
+	margin-left: 285px;
+    }
+
+}
+
+@media only screen and (min-height: 768px) {
+
+    .sidebar ul.menu {
+	height: 700px;
     }
 
 }

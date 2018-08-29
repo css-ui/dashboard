@@ -29,6 +29,7 @@ body {
     custom dropdown menu
 */
 .dropdown {
+    margin-right: 25px;
     margin-top: 9px;
 }
 
@@ -41,7 +42,7 @@ body {
 }
 
 .dropdown ul.expand-dropdown {
-    margin-top: 10px;
+    margin-top: 14px;
 }
 
 .dropdown .employ-toggle.click:hover {

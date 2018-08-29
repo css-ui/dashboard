@@ -1,41 +1,66 @@
 
 /*
-    light theme sidebar menu
+    dark theme sidebar menu
 */
-.nav .click { color: white; }
-.nav .click .menu {
+.nav .click { 
     transition: all 0.1s ease-in-out;
-         color: #656c7c;
+         color: #4a5160;
 }
 
-.nav .click .menu:hover {
-    background-color: #262a34;
+.nav .click:hover {
+    background-color: #363c49;
+               color: #eaedf1;
 }
 
 .sidebar .title {
-    background-color: #283244;
+    background-color: #1d222c;
+       border-bottom: 1px #2e3543 solid;
          font-weight: 600;
                color: white;
 }
 
 .sidebar ul.menu { background-color: #1d222c; }
-.sidebar ul.menu li { color: #6a6e76; }
-.sidebar ul.menu li ul li a { color: #9197a1; }
+.sidebar ul.menu li { color: #b5bac3; }
+.sidebar ul.menu li ul li a {
+    border: 1px solid transparent;
+    border-radius: 3px;
+            color: #eaedf1;
+}
+
 .sidebar ul.menu li ul li a:hover {
-    background-color: #27303f;
-               color: #dce1e9;
+    background-color: #363c49;
+
 }
 
 .sidebar ul.menu li ul li a.current {
-    border-right: 3px solid #dce1e9;
-           color: #dce1e9;
+    background-color: #363c49;
+}
+
+.sidebar ul.menu li ul li.parent a.current {
+    background-color: #363c49;
+}
+
+.sidebar ul.menu li ul li.parent .submenu a.current {
+    background-color: #363c49;
+}
+
+.sidebar ul.menu li ul li.parent:before { color: #6b7382; }
+.sidebar ul.menu li ul li.parent.active:before { color: #b9b9b9; }
+.sidebar ul.menu li ul li ul {
+     border-left: 1px solid #363c49;
 }
 
 /*
     notifications
 */
 .sidebar span.notifi {
-    color: #dce1e9;
+    background-color: #fd3f5b;
+               color: white;
+}
+
+.sidebar a.current span.notifi {
+    background-color: #fd3f5b;
+               color: white;
 }
 
 @media only screen and (min-width: 768px) {
@@ -50,10 +75,10 @@
     perfect scrollbar
 */
 .ps__thumb-y {
-    background-color: #656c7c;
+    background-color: #515867;
 }
 
 .ps__rail-y:hover > .ps__thumb-y,
 .ps__rail-y:focus > .ps__thumb-y {
-    background-color: #656c7c;
+    background-color: #515867;
 }
