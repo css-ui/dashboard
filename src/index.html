@@ -176,6 +176,10 @@
 			// perfect scrollbar
 			const ps = new PerfectScrollbar('.scrollbar');
 
+			// nanobar
+			var nanobar = new Nanobar();
+			    nanobar.go(100);
+
 			// responsive navigation
 			$('.nav .click').on('click', function() {
 				$('.nav .responsive').toggleClass('expandable');
@@ -207,10 +211,6 @@
 					}
 				});
 			});
-
-			// nanobar
-			var nanobar = new Nanobar();
-			    nanobar.go(100);
 		});
 	</script>
 </body>
