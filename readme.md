@@ -1,6 +1,6 @@
 ## Dashboard template
 
-Simple dashboard template.
+Fast and simple dashboard template.
 
 ## Powered by
 
