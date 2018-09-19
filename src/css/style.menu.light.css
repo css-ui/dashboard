@@ -1,84 +1,93 @@
 
-/*
-    light theme sidebar menu
-*/
+/* light color for responsive menu
+   ========================================================================== */
 .nav .click {
+    color: #dcdcdc;
     transition: all 0.1s ease-in-out;
-         color: #dcdcdc;
 }
 
 .nav .click:hover {
-    background-color: #f2f2f2;
-	       color: #5c5c5c;
+    background: #f2f2f2;
+    color: #5c5c5c;
 }
 
 .sidebar .title {
-    background-color: white;
-       border-bottom: 1px #f4f4f4 solid;
-         font-weight: 600;
-	       color: #494949;
+    background: #fff;
+    border-bottom: 1px #f4f4f4 solid;
+    color: #494949;
+    font-weight: 600;
 }
 
-.sidebar ul.menu { background-color: white; }
-.sidebar ul.menu li { color: #8a8a8a; }
+.sidebar ul.menu {
+    background: #fff;
+}
+
+.sidebar ul.menu li {
+    color: #8a8a8a;
+}
+
 .sidebar ul.menu li ul li a {
     border: 1px solid transparent;
     border-radius: 3px;
-            color: #494949;
+    color: #494949;
 }
 
 .sidebar ul.menu li ul li a:hover {
-    background-color: #f4f4f4;
+    background: #f4f4f4;
 
 }
 
 .sidebar ul.menu li ul li a.current {
-    background-color: #f4f4f4;
+    background: #f4f4f4;
 }
 
 .sidebar ul.menu li ul li.parent a.current {
-    background-color: #f4f4f4;
+    background: #f4f4f4;
 }
 
 .sidebar ul.menu li ul li.parent .submenu a.current {
-    background-color: #f4f4f4;
+    background: #f4f4f4;
 }
 
-.sidebar ul.menu li ul li.parent:before { color: #b9b9b9; }
-.sidebar ul.menu li ul li.parent.active:before { color: #494949; }
+.sidebar ul.menu li ul li.parent:before {
+    color: #b9b9b9;
+}
+
+.sidebar ul.menu li ul li.parent.active:before {
+    color: #494949;
+}
+
 .sidebar ul.menu li ul li ul {
-     border-left: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
 }
 
-/*
-    notifications
-*/
-.sidebar span.notifi {
-    background-color: #fd3f5b;
-               color: white;
+/* notice
+   ========================================================================== */
+.sidebar span.notice {
+    background: #fd3f5b;
+    color: #fff;
 }
 
-.sidebar a.current span.notifi {
-    background-color: white;
-               color: #494949;
+.sidebar a.current span.notice {
+    background: #fff;
+    color: #494949;
 }
 
 @media only screen and (min-width: 768px) {
 
     .sidebar {
-	background-color: white;
+	background: #fff;
     }
 
 }
 
-/*
-    perfect scrollbar
-*/
+/* perfect scrollbar
+   ========================================================================== */
 .ps__thumb-y {
-    background-color: #d3d3d3;
+    background: #d3d3d3;
 }
 
 .ps__rail-y:hover > .ps__thumb-y,
 .ps__rail-y:focus > .ps__thumb-y {
-    background-color: #d3d3d3;
+    background: #d3d3d3;
 }

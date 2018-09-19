@@ -1,103 +1,104 @@
 
-/*
-    responsive menu
-*/
+/* responsive menu
+   ========================================================================== */
 .nav .click {
     border-radius: 30px;
-        font-size: 14px;
-          padding: 3px 8px;
-	   cursor: pointer;
-	   margin: 15px 20px 0 0;
-	    float: right;
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    margin: 15px 20px 0 0;
+    padding: 3px 8px;
 }
 
 .nav .click:before {
+    content: "\f0c9";
     font-family: "FontAwesome";
-      font-size: 14px;
-        content: "\f0c9";
+    font-size: 14px;
 }
 
-.nav .responsive { display: none; }
-.nav .expandable { display: block; }
+.nav .responsive {
+    display: none;
+}
 
-/*
-    sidebar
-*/
+.nav .expandable {
+    display: block;
+}
+
+/* sidebar
+   ========================================================================== */
 .sidebar .title {
     font-size: 1.188em;
-      padding: 15px 20px 0 25px;
-       height: 56px;
+    height: 56px;
+    padding: 15px 20px 0 25px;
 }
 
-/*
-    notifications
-*/
-.sidebar span.notifi {
+/* notice
+   ========================================================================== */
+.sidebar span.notice {
     border-radius: 30px;
-      margin-left: 30px;
-        font-size: small;
-	  padding: 0 6px 1px;
+    font-size: small;
+    margin-left: 30px;
+    padding: 0 6px 1px;
 }
 
 .sidebar ul.menu {
+    height: 460px;
     list-style: none;
-       padding: 0 25px;
-        height: 460px;
-        margin: 0;
+    margin: 0;
+    padding: 0 25px;
 }
 
 .sidebar ul.menu ul {
+    font-size: 100%;
     list-style: none;
-     font-size: 100%;
-        margin: 0;
+    margin: 0;
 }
 
 .sidebar ul.menu li {
     line-height: 34px;
-     margin-top: 15px;
-        padding: 0;
+    margin-top: 15px;
+    padding: 0;
 }
 
 .sidebar ul.menu li span.name {
+    font-size: 0.83em;
     text-transform: uppercase;
-         font-size: 0.83em;
 }
 
 .sidebar ul.menu li ul li {
+    margin: 0;
     padding-top: 0;
-         margin: 0;
 }
 
 .sidebar ul.menu li ul li a {
+    display: block;
+    margin-bottom: 2px;
+    padding: 0 10px;
     text-decoration: none;
-      margin-bottom: 2px;
-            padding: 0 10px;
-            display: block;
 }
 
 .sidebar ul.menu li ul li ul {
+    display: none;
+    margin: 15px 10px;
     padding-left: 10px;
-         display: none;
-          margin: 15px 10px;
 }
 
 .sidebar ul.menu li ul li.parent:before {
-     font-family: "FontAwesome";
-         content: "\f106";
-	  margin: 0 15px 0 0;
-	   float: right;
+    content: "\f106";
+    float: right;
+    font-family: "FontAwesome";
+    margin: 0 15px 0 0;
 }
 
 .sidebar ul.menu li ul li.parent.active:before {
-         content: "\f107";
+    content: "\f107";
 }
 
-/*
-    perfect scrollbar
-*/
+/* perfect scrollbar
+   ========================================================================== */
 .scrollbar {
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 
 .ps__thumb-y {
@@ -106,7 +107,7 @@
 
 .ps__rail-y {
     margin: 10px 0;
-     width: auto;
+    width: auto;
 }
 
 .ps__rail-y:hover > .ps__thumb-y,
@@ -116,14 +117,19 @@
 
 @media only screen and (min-width: 768px) {
 
-    .nav .click { display: none; }
-    .nav .responsive { display: block; }
+    .nav .click {
+	display: none;
+    }
+
+    .nav .responsive {
+	display: block;
+    }
 
     .sidebar {
+	bottom: 0;
 	position: fixed;
-	  bottom: 0;
-	   width: 285px;
-	     top: 0;
+	top: 0;
+	width: 285px;
     }
 
     .content-wrapper {
