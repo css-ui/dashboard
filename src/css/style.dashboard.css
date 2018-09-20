@@ -103,10 +103,6 @@
 
 /* content
    ========================================================================== */
-.content {
-    padding: 0;
-}
-
 .content .box {
     display: block;
     margin-top: 2px;
