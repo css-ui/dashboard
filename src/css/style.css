@@ -2,9 +2,7 @@
 /* elements
    ========================================================================== */
 body {
-    background: #f4f4f4;
     font-family: 'Open Sans', sans-serif;
-    min-height: 100px;
 }
 
 /* nanobar
@@ -23,25 +21,3 @@ body {
     width: 0;
 }
 
-/* custom dropdown menu
-   ========================================================================== */
-.dropdown {
-    margin-right: 25px;
-    margin-top: 9px;
-}
-
-.dropdown ul.expand-dropdown li a i.fa {
-    padding-right: 12px;
-}
-
-.dropdown ul.expand-dropdown li {
-    min-width: 160px;
-}
-
-.dropdown ul.expand-dropdown {
-    margin-top: 14px;
-}
-
-.dropdown .employ-toggle.click:hover {
-    background: #fff;
-}

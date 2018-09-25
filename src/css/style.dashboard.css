@@ -1,6 +1,13 @@
 
 /* dashboard
    ========================================================================== */
+body {
+    background: #f4f4f4;
+    min-height: 100px;
+}
+
+/* header
+   ========================================================================== */
 .header {
     display: none;
     height: 55px;
@@ -99,6 +106,29 @@
     border-radius: 30px;
     display: block;
     max-width: 33px;
+}
+
+/* custom dropdown menu
+   ========================================================================== */
+.dropdown {
+    margin-right: 25px;
+    margin-top: 9px;
+}
+
+.dropdown ul.expand-dropdown li a i.fa {
+    padding-right: 12px;
+}
+
+.dropdown ul.expand-dropdown li {
+    min-width: 160px;
+}
+
+.dropdown ul.expand-dropdown {
+    margin-top: 14px;
+}
+
+.dropdown .employ-toggle.click:hover {
+    background: #fff;
 }
 
 /* content
