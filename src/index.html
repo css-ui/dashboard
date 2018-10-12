@@ -29,6 +29,11 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<!-- website loader -->
+	<div id="webloader">
+		<div id="spinner"></div>
+	</div>
+
 	<!-- navigation -->
 	<div class="nav">
 
@@ -168,17 +173,20 @@
 
 	<!-- javascript libraries and plugins  -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/nanobar/0.4.2/nanobar.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.3.0/perfect-scrollbar.min.js"></script>
 	<script>
 		$(function() {
 
+			// website loader
+			window.addEventListener('load', () => {
+				const webloader = document.getElementById('webloader');
+				setTimeout(() => {
+					webloader.classList.add('out');
+				}, 300);
+			});
+
 			// perfect scrollbar
 			const ps = new PerfectScrollbar('.scrollbar');
-
-			// nanobar
-			var nanobar = new Nanobar();
-			    nanobar.go(100);
 
 			// responsive navigation
 			$('.nav .click').on('click', function() {

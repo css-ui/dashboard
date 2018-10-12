@@ -5,19 +5,46 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* nanobar
+/* website loader
    ========================================================================== */
-.nanobar {
-    height: 2px;
-    top: 0;
+#webloader {
+    background: #fff;
+    height: 100vh;
+    opacity: 1;
+    position: fixed;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
     width: 100%;
-    z-index: 9999;
+    z-index: 999;
 }
 
-.nanobar .bar {
-    background: #acacac;
-    height: 100%;
-    transition: height .3s;
-    width: 0;
+#webloader.out {
+    opacity: 0;
+    visibility: hidden;
 }
 
+#spinner {
+    width: 40px;
+    height: 40px;
+    margin: 100px auto;
+    background: #333;
+    position: relative;
+    top: 35%;
+    border-radius: 100%;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+    100% {
+	opacity: 0;
+    }
+}
+
+@keyframes sk-scaleout {
+    0% {
+	transform: scale(0);
+    } 100% {
+	transform: scale(1.0);
+	opacity: 0;
+    }
+}
