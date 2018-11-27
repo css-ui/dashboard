@@ -49,11 +49,11 @@
     background: #f4f4f4;
 }
 
-.sidebar ul.menu li ul li.parent:before {
+.sidebar ul.menu li ul li.parent a.employ:before {
     color: #b9b9b9;
 }
 
-.sidebar ul.menu li ul li.parent.active:before {
+.sidebar ul.menu li ul li.parent a.employ.active:before {
     color: #494949;
 }
 
