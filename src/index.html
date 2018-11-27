@@ -72,7 +72,7 @@
 						<ul>
 						    	<li><a href="#">Home</a></li>
 							<li class="parent">
-								<a href="#" class="current">Settings</a>
+								<a href="#" class="employ current">Settings</a>
 								<ul class="submenu">
 									<li><a href="#">Timezone</a></li>
 									<li><a href="#" class="current">Permissions</a></li>
@@ -89,7 +89,7 @@
 						<ul>
 						    	<li><a href="#">New</a></li>
 							<li class="parent">
-								<a href="#">Settings comments</a>
+								<a href="#" class="employ">Settings comments</a>
 								<ul class="submenu">
 									<li><a href="#">Disable</a></li>
 									<li><a href="#">Enable</a></li>
@@ -102,7 +102,7 @@
 					<li>
 						<span class="name">Blog</span>
 						<ul>
-						    	<li><a href="#" class="parent">Add</a></li>
+						    	<li><a href="#">Add</a></li>
 							<li><a href="#">List</a></li>
 						</ul>
 					</li>
@@ -180,22 +180,22 @@
 			var nanobar = new Nanobar();
 			    nanobar.go(100);
 
-			// responsive navigation
+			// responsive menu
 			$('.nav .click').on('click', function() {
 				$('.nav .responsive').toggleClass('expandable');
 			});
 
-			// active expanded navigation
+			// responsive menu active submenu
 			$('ul.menu li').each(function() {
 				if ($(this).children('li.parent a.current').length > 0 ) {
 					$(this).parent().find('ul.submenu').toggle();
-					$(this).parent().find('li.parent').addClass('active');
+					$(this).parent().find('li.parent a.employ').addClass('active');
 				}
 			});
 
-			// dropdown navigation
+			// responsive menu open submenu
 			$('ul.menu li a').on('click', function() {
-				$(this).parent('li.parent').toggleClass('active');
+				$(this).parent('li.parent').find('a.employ').toggleClass('active');
 				$(this).parent().find('ul.submenu').slideToggle('fast');
 			});
 
