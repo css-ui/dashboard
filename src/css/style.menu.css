@@ -83,14 +83,14 @@
     padding-left: 10px;
 }
 
-.sidebar ul.menu li ul li.parent:before {
+.sidebar ul.menu li ul li.parent a.employ:before {
     content: "\f106";
     float: right;
     font-family: "FontAwesome";
     margin: 0 15px 0 0;
 }
 
-.sidebar ul.menu li ul li.parent.active:before {
+.sidebar ul.menu li ul li.parent a.employ.active:before {
     content: "\f107";
 }
 
