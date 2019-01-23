@@ -40,6 +40,7 @@ CSS dashboard.
 
 ```html
 <link rel="stylesheet" href="path/to/style.dashboard.css">
+<link rel="stylesheet" href="path/to/style.css">
 ```
 
 Use Open Sans fotns.
