@@ -45,7 +45,7 @@ CSS dashboard.
 
 We will add new features.
 
-1) Add logged to sidebar.
+- Add logged to sidebar.
 
 ```html
 <div class="logged sidebar">
@@ -56,7 +56,7 @@ We will add new features.
 </div>
 ```
 
-2) Add header.
+- Add header.
 
 ```html
 <div class="header">
@@ -117,9 +117,9 @@ Location of new properties.
 			<p>Title for sidebar</p>
 		</div>
 
-		<!--                          -->
-		<!-- 1. Add logged to sidebar -->
-		<!--                          -->
+		<!--                       -->
+		<!-- Add logged to sidebar -->
+		<!--                       -->
 
 		<div class="responsive">
 			<ul class="menu scrollbar">
@@ -147,9 +147,9 @@ Location of new properties.
 <!-- content wrapper -->
 <div class="content-wrapper">
 
-	<!--               -->
-	<!-- 2. Add header -->
-	<!--               -->
+	<!--            -->
+	<!-- Add header -->
+	<!--            -->
 
 </div>
 ```
