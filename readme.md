@@ -89,14 +89,15 @@ We will add new features.
 				<!--                       -->
 
 			</div>
-	</div>
-
-	<!-- content -->
-	<div class="content">
-		<div class="box style">
-			<h4>Sample</h4>
-			Content...
 		</div>
+	</div>
+</div>
+
+<!-- content -->
+<div class="content">
+	<div class="box style">
+		<h4>Sample</h4>
+		Content...
 	</div>
 </div>
 ```
