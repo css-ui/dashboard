@@ -117,7 +117,7 @@ Location of new properties.
 		</div>
 
 		<!--                          -->
-		<!-- 1) Add logged to sidebar -->
+		<!-- 1. Add logged to sidebar -->
 		<!--                          -->
 
 		<div class="responsive">
@@ -147,7 +147,7 @@ Location of new properties.
 <div class="content-wrapper">
 
 	<!--               -->
-	<!-- 2) Add header -->
+	<!-- 2. Add header -->
 	<!--               -->
 
 </div>
