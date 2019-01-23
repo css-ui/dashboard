@@ -1,0 +1,26 @@
+{
+	"name": "css-ui-dashboard",
+	"version": "1.0.0",
+	"description": "Simple and fast dashboard template.",
+	"main": "css/style.dashboard.css",
+	"repository": {
+		"type": "git",
+		"url": "git+https://accgit@github.com/css-ui/dashboard.git"
+	},
+	"keywords": [
+		"dashboard",
+		"admin",
+		"template"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/css-ui/dashboard/issues"
+	},
+	"dependencies": {
+		"css-ui-simple": "^2.5.1",
+		"css-ui-responsive-menu": "^3.1.1",
+		"css-ui-dropdown-menu": "^1.2.0",
+		"nanobar": "^0.4.2"
+	},
+	"homepage": "https://github.com/css-ui/dashboard#readme"
+}
