@@ -43,12 +43,6 @@ CSS dashboard.
 <link rel="stylesheet" href="path/to/style.css">
 ```
 
-Use Open Sans fotns.
-
-```css
-font-family: 'Open Sans', sans-serif;
-```
-
 We will add new features.
 
 1) Add logged to sidebar.
