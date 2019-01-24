@@ -124,21 +124,9 @@ Location of new properties.
 		<div class="responsive">
 			<ul class="menu scrollbar">
 
-				<!-- dropdown menu -->
-				<li>
-					<span class="name">Dropdown menu</span>
-					<ul>
-						<li><a href="#">Click</a></li>
-						<li class="parent">
-						<a href="#" class="employ current">Europe</a>
-							<ul class="submenu">
-								<li><a href="#">Germany</a></li>
-								<li><a href="#" class="current">France</a></li>
-								<li><a href="#">Italy</a></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
+				<!--                 -->
+				<!-- Responsive menu -->
+				<!--                 -->
 			</ul>
 		</div>
 	</div>
