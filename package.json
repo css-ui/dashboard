@@ -1,6 +1,6 @@
 {
 	"name": "css-ui-dashboard",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "Simple and fast dashboard template.",
 	"main": "css/style.dashboard.css",
 	"repository": {

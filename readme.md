@@ -84,9 +84,9 @@ We will add new features.
 			<!-- dropdown menu -->
 			<div class="float left">
 
-				<!--                       -->
-				<!-- Here we dropdown menu -->
-				<!--                       -->
+				<!--                   -->
+				<!-- Add dropdown menu -->
+				<!--                   -->
 
 			</div>
 		</div>
@@ -124,9 +124,9 @@ Location of new properties.
 		<div class="responsive">
 			<ul class="menu scrollbar">
 
-				<!--                 -->
-				<!-- Responsive menu -->
-				<!--                 -->
+				<!--                     -->
+				<!-- Add responsive menu -->
+				<!--                     -->
 			</ul>
 		</div>
 	</div>
