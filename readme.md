@@ -153,7 +153,6 @@ javascript libraries and plugins.
 		var nanobar = new Nanobar();
 		nanobar.go(100);
 
-		/* Add responsive and dropdown menu js */
 	});
 </script>
 ```
