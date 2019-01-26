@@ -77,7 +77,7 @@ We will add new features.
 			<div class="float left logged in">
 				<ul class="clear">
 					<li class="user float left">You login as John Doe</li>
-					<li class="gravatar float left"><img src="img/user.png" alt="user"></li>
+					<li class="gravatar float left"><img src="path/to/user.png" alt="user"></li>
 				</ul>
 			</div>
 
