@@ -1,0 +1,34 @@
+
+/* scrollbar table
+   ========================================================================== */
+.scrollbar.table {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+}
+
+.ps__thumb-x {
+    height: 7px;
+}
+
+.ps__rail-x:hover > .ps__thumb-x,
+.ps__rail-x:focus > .ps__thumb-x,
+.ps__rail-x.ps--clicking .ps__thumb-x {
+    height: 7px;
+}
+
+.ps__thumb-x {
+    background: #e0e0e0;
+}
+
+.ps__rail-x:hover > .ps__thumb-x,
+.ps__rail-x:focus > .ps__thumb-x,
+.ps__rail-x.ps--clicking .ps__thumb-x {
+    background: #e0e0e0;
+}
+
+.ps .ps__rail-x:hover,
+.ps .ps__rail-x:focus,
+.ps .ps__rail-x.ps--clicking {
+    background: none;
+}

@@ -157,4 +157,23 @@ javascript libraries and plugins.
 </script>
 ```
 
+Activating the scrollbar on the tables.
+
+```html
+<link rel="stylesheet" href="path/to/style.scrollbar.css">
+<div class="scrollbar table">
+	<table>
+		...
+	</table>
+</div>
+<script>
+	$(function() {
+
+		$('.scrollbar.table').each(function() {
+			new PerfectScrollbar($(this)[0]);
+		});
+	});
+</script>
+```
+
 Enjoy dashboard.
