@@ -114,6 +114,10 @@ body {
     margin-top: 9px;
 }
 
+.dropdown .employ-toggle.click:hover {
+    background: #fff;
+}
+
 .dropdown ul.expand-dropdown li a i.fa {
     padding-right: 12px;
 }
@@ -144,9 +148,13 @@ body {
     padding: 25px;
 }
 
-/* table action buttons
+/* table and action buttons
    ========================================================================== */
-.action-buttons a {
+table td {
+    font-weight: 400;
+}
+
+table td.action-buttons a {
     padding: 2px 4px;
     border-radius: 3px;
     color: #acacac;
@@ -154,7 +162,7 @@ body {
     color: #d4d4d4;
 }
 
-.action-buttons a:hover {
+table td.action-buttons a:hover {
     color: #9e9e9e;
 }
 
