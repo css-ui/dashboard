@@ -160,17 +160,42 @@ javascript libraries and plugins.
 Activating the scrollbar on the tables.
 
 ```html
+<!-- css scrollbar -->
 <link rel="stylesheet" href="path/to/style.scrollbar.css">
+
+<!-- html use class -->
 <div class="scrollbar table">
-	<table>
-		...
-	</table>
+	<table>...</table>
 </div>
+
+<!-- javascript scrollbar -->
 <script>
 	$(function() {
 
 		$('.scrollbar.table').each(function() {
 			new PerfectScrollbar($(this)[0]);
+		});
+	});
+</script>
+```
+
+How to close the displayed message.
+
+```html
+<!-- html message -->
+<p class="message info">
+	Message...
+	<span class="close-message">
+		<i class="fa fa-times" aria-hidden="true"></i>
+	</span>
+</p>
+
+<!-- javascript close message -->
+<script>
+	$(function() {
+
+		$('.close-message').on('click', function() {
+			$(this).parent().fadeOut('slow');
 		});
 	});
 </script>
