@@ -6,18 +6,6 @@
     overflow: auto;
 }
 
-.content .box.style .wrap-top {
-    padding: 25px 25px 0 25px;
-}
-
-.content .box.style .wrap-middle {
-    padding: 0 25px;
-}
-
-.content .box.style .wrap-bootom {
-    padding: 0 25px 25px 25px;
-}
-
 .ps__rail-x {
     margin: 0 2px;
 }
@@ -25,12 +13,12 @@
 .ps__rail-x:hover > .ps__thumb-x,
 .ps__rail-x:focus > .ps__thumb-x,
 .ps__rail-x.ps--clicking .ps__thumb-x {
-    height: 7px;
+    height: 5px;
 }
 
 .ps__thumb-x {
     background: #e0e0e0;
-    height: 7px;
+    height: 5px;
 }
 
 .ps__rail-x:hover > .ps__thumb-x,

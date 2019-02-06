@@ -141,10 +141,18 @@ body {
     background: #fff;
     border-radius: 3px;
     margin-bottom: 20px;
+    padding-top: 25px;
 }
 
-.content .box.style.wrap {
-    padding: 25px;
+.content .box.style.wrap,
+.content .box.style .wrap {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.content .box.style.bottom.space,
+.content .box.style .bottom.space {
+    padding-bottom: 25px;
 }
 
 /* table and action buttons
