@@ -141,6 +141,9 @@ body {
     background: #fff;
     border-radius: 3px;
     margin-bottom: 20px;
+}
+
+.content .box.style.wrap {
     padding: 25px;
 }
 
