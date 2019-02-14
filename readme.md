@@ -169,14 +169,29 @@ Activating the scrollbar on the tables.
 </div>
 
 <!-- javascript scrollbar -->
+<script src="path/to/jquery.floatThead.js"></script>
 <script>
 	$(function() {
 
-		$('.scrollbar.table').each(function() {
+		var table = $('table');
+		var scrollbar = '.scrollbar.table';
+		$(scrollbar).each(function() {
 			new PerfectScrollbar($(this)[0]);
+		});
+		table.floatThead({
+			scrollContainer: function(table) {
+				return table.closest(scrollbar);
+			}
 		});
 	});
 </script>
+```
+
+Fixed set heights for tables are set in this class.
+```css
+.scrollbar.table {
+    height: 200px;
+}
 ```
 
 How to close the displayed message.

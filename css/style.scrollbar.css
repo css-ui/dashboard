@@ -3,7 +3,10 @@
    ========================================================================== */
 .scrollbar.table {
     position: relative;
-    overflow: auto;
+}
+
+.scrollbar.table table th {
+    background: #fff;
 }
 
 .ps__rail-x {
